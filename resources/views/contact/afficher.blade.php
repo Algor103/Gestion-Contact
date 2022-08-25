@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <h1>Gestion Contacte</h1>
+    <h1>Gestion Contact</h1>
 
 
     <table class="table table-bordered">

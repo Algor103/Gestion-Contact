@@ -20,11 +20,13 @@ Route::controller(ContactController::class) -> group(function(){
     Route::get('/', 'index');
     Route::get('/contact/create', 'create');
     Route::get('/contact/{id}', 'afficher');
-    Route::get('/contact/{id}', 'modifier');
+    Route::get('/contact/{id}/modifier', 'modifier');
 
     // utilisation de la methode 'post'
     Route::post('/contact', 'enregistrement');
-    Route::post('/contact/{id}', 'update');
-    Route::post('/contact/{id}', 'supprimer');
+    // utilisation de la methode 'patch'
+    Route::patch('/contact/{id}', 'update');
+    // utilisation de la methode 'delete'
+    Route::delete('/contact/{id}', 'supprimer');
 });
 

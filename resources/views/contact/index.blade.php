@@ -55,8 +55,8 @@
                         @csrf
                         @method('DELETE')
 
-                        <a class="btn btn-info" href="{{ url('contact/'. $contact->id) }}">Voir</a>
-                        <a class="btn btn-primary" href="{{ url('contact/'. $contact->id .'/modifier') }}">Modifier</a>
+                        <a class="btn btn-info" href="{{ url('contact/afficher'. $contact->id .'/afficher') }}">Voir</a>
+                        <a class="btn btn-primary" href="{{ url('contact/modifier'. $contact->id .'/modifier') }}">Modifier</a>
 
                         <button type="submit" class="btn btn-danger">Supprimer</button>
 
