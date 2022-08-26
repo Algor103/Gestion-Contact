@@ -30,7 +30,7 @@
         <tr>
 
             <th>Salaire:</th>
-            <td>$ {{ $contact->salaire }}</td>
+            <td>Fcfa {{ $contact->salaire }}</td>
 
         </tr>
 

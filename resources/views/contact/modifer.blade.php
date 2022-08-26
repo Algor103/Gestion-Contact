@@ -49,7 +49,7 @@
 
         <div class="form-group mb-3">
 
-            <label for="salaire">Salaire ($):</label>
+            <label for="salaire">Salaire (Fcfa):</label>
             <input type="number" class="form-control" id="salaire" placeholder="Salaire" name="salaire" value="{{ $contact->salaire }}">
 
         </div>

@@ -44,14 +44,14 @@ class ContactController extends Controller
     public function afficher($id)
     {
         $contact = Contact::findOrFail($id);
-        return view('contact.afficher', compact('contact'));
+        return view("contact\afficher", compact('contact'));
     }
 
     //retour d'un formulaire de modification
     public function modifier($id)
     {
         $contact = Contact::findOrFail($id);
-        return view('contact.modifier', compact('contact'));
+        return view("contact\modifer", compact('contact'));
     }
 
     // Enregistrement de la modification dans la BD
